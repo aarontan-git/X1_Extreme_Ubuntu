@@ -4,6 +4,8 @@ Before installation:
 - Update BIOS through Lenovo Vantage App
 - Graphics: Discrete mode
 
+press F1 to enter BIOS, F12 to enter boot menu
+
 I followed the following link for general installation:
 
 https://bauklimatik-dresden.de/privat/nicolai/index.html?https&&&bauklimatik-dresden.de/privat/nicolai/html/en/lenovo_x1_extreme_ubuntu1804.html
@@ -39,5 +41,31 @@ To be able to switch between Nvidia and Intel:
  https://askubuntu.com/questions/412452/getting-hybrid-graphics-to-work-nvidia-prime-gt650m
 
 
+## To Connect to UofT Wifi
+Click on the wifi icon and click edit connections. Remove all previous uoft connection you used before. There might be one or more.
 
-  
+Then attempt to connect to UofT network.
+
+It will give you a menu to fill out.
+
+The EAP method should be set to "PEAP" from drop down menu
+
+Phase 2 authentication should be "MSHAPV2"
+
+no CA certificate
+
+no anonymous identity
+
+no user certificate
+
+Identity is UTORid password is "you password for your UTORID"
+
+## Reinstall Ubuntu
+- use gparted to combine partitions
+- swap should be turned off before moving
+
+## problem with pip
+
+'''
+hash -d pip
+'''
